@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人债转平台-首页</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/rem.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="app">
+        <div class="index-top-block">
+            <div class="index-top-main">您有{{ toBeConfirmedCount }}笔债权承接待确认</div>
+            <div class="index-top-btn">立即确认</div>
+        </div>
+        <div class="user-info-block">
+            <div class="user-avatar">
+                <img src="" alt="默认头像">
+            </div>  
+            <div class="user-info">
+                <h3 class="user-mobile">134****0099</h3>
+                <div class="user-real-name">已实名\去实名</div>
+            </div>
+        </div>
+        <div class="user-assets-block">
+            <div class="user-assets-top">
+                <h3 class="user-assets-top-tit">我的资产</h3>
+                <div class="user-assets-top-main">
+                    <div class="total-assets-val">50,000.00</div>
+                    <div class="total-assets-key">总资产（元）</div>
+                </div>
+            </div>
+            <div class="user-assets-line">
+                <span class="user-assets-line-key">转让中资产（元）</span>
+                <span class="user-assets-line-val">30,000,00</span>
+            </div>
+        </div>
+        <div class="user-debt-block">
+            <div class="user-debt-btn">我的转让</div>
+            <div class="user-debt-btn"><span>4</span>我的承接</div>
+        </div>
+        <div class="user-bankcard-block">
+            <div class="user-bankcard-top">
+                <h3 class="user-bankcard-top-tit">我的银行卡</h3>
+                <div class="bindcard-btn">去绑定</div>
+            </div>
+            <div class="user-bankcard-line">
+                <span class="bank-logo"></span>
+                <span class="bank-name">中国农业银行</span>
+                <span class="bankcard-number">622200****0004271</span>
+            </div>
+        </div>
+        <div class="login-out">退出登录</div>3
+    </div>
+</body>
+<script>
+var app = new Vue({
+    el: '#app',
+    data: {
+        toBeConfirmedCount: 0 
+    }
+});
+</script>
+</html>
