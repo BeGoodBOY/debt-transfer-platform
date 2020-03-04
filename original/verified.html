@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人债转平台-实名认证</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/rem.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div id="app">
+        <form class="verified-form">
+            <div class="verified-input-out">
+                <span class="verified-input-key">持卡人姓名：</span>
+                <input v-model="" placeholder="">
+            </div>
+            <div class="verified-input-out">
+                <span class="verified-input-key">银行卡号：</span>
+                <input v-model="" placeholder="请输入银行卡号">
+            </div>
+            <div class="verified-input-out">
+                <span class="verified-input-key">身份证号：</span>
+                <input v-model="" placeholder="请输入身份证号">
+            </div>
+            <div class="verified-input-out">
+                <span class="verified-input-key">预留手机：</span>
+                <input v-model="" placeholder="请输入银行卡预留手机号">
+            </div>
+            <div>
+                <span class="btn-select"></span>
+                <span>我已阅读并同意<em>协议</em></span>
+            </div>
+            <button class="btn-login">提交认证</button>
+        </form>
+    </div>
+</body>
+<script>
+var app = new Vue({
+    el: '#app',
+    data: {
+
+    }
+});
+</script>
+</html>
