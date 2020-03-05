@@ -5,39 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>个人债转平台-短信验证码登陆</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./js/rem.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-    <div id="app">
-        <div class="login-top">
-            <h3 class="login-tit">短信验证码登陆</h3>
-            <div class="login-avatar"><img src="" alt="默认头像"></div>
-        </div>
-        <form class="login-form">
-            <div class="login-input-out">
-                <input v-model="" placeholder="请输入手机号">
+    <div id="app" class="app">
+        <header class="header noBorder">
+            <h2 class="header-tit">
+                <span class="header-tit-text"></span>
+                <div class="location-back">
+                    <span class="location-back-icon"></span>
+                </div>
+            </h2>
+        </header>
+        <div class="login-form-box">
+            <div class="login-top">
+                <h3 class="login-tit">短信验证码登陆</h3>
             </div>
-            <div class="login-input-out">
-                <input v-model="" placeholder="请输入验证码">
-                <span class="btn-getCode">获取验证码</span>
+            <form class="login-form">
+                <div class="login-input-item">
+                    <h3 class="login-input-tag">手机号</h3>
+                    <input class="login-input" placeholder="请输入手机号">
+                </div>
+                <div class="login-input-item">
+                    <h3 class="login-input-tag">图形验证码</h3>
+                    <div class="login-input-out">
+                        <input class="login-input"  placeholder="请输入图形验证码">
+                    </div>
+                </div>
+                <div class="login-input-item">
+                    <h3 class="login-input-tag">验证码</h3>
+                    <div class="login-input-out">
+                        <input class="login-input" placeholder="请输入验证码">
+                    </div>
+                </div>
+                <button class="btn-login">登录</button>
+            </form>
+            <div class="login-link">
+                <button class="fl btn-login-link">手机密码登录</button>
+                <button class="fr btn-login-link">注册</button>
             </div>
-            <button class="btn-login">登录</button>
-        </form>
-        <div class="login-link">
-            <button>手机密码登录</button>
-            <button>注册</button>
         </div>
     </div>
 </body>
 <script>
-var app = new Vue({
-    el: '#app',
-    data: {
-
-    }
-});
 </script>
 </html>
