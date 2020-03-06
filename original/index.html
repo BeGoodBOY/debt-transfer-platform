@@ -8,15 +8,21 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./js/rem.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
-    <div id="app">
+<body class="bgf4">
+    <div id="app" class="app">
+        <header class="header noBorder">
+            <h2 class="header-tit">
+                <span class="header-tit-text">个人债转平台</span>
+            </h2>
+        </header>
         <div class="index-top-block">
-            <div class="index-top-main">您有{{ toBeConfirmedCount }}笔债权承接待确认</div>
+            <div class="index-top-main">您有<span> {{ toBeConfirmedCount }} </span>笔债权承接待确认</div>
             <div class="index-top-btn">立即确认</div>
         </div>
-        <div class="user-info-block">
+        <div class="user-info-block box">
             <div class="user-avatar">
                 <img src="" alt="默认头像">
             </div>  
@@ -25,7 +31,18 @@
                 <div class="user-real-name">已实名\去实名</div>
             </div>
         </div>
-        <div class="user-assets-block">
+        <div class="user-bankcard-block index-block">
+            <div class="user-bankcard-top">
+                <h3 class="user-bankcard-top-tit index-block-tit">我的银行卡</h3>
+                <div class="bindcard-btn">去绑定</div>
+            </div>
+            <div class="user-bankcard-line">
+                <span class="bank-logo"></span>
+                <span class="bank-name">中国农业银行</span>
+                <span class="bankcard-number">622200****0004271</span>
+            </div>
+        </div>
+        <div class="user-assets-block index-block">
             <div class="user-assets-top">
                 <h3 class="user-assets-top-tit">我的资产</h3>
                 <div class="user-assets-top-main">
@@ -38,20 +55,9 @@
                 <span class="user-assets-line-val">30,000,00</span>
             </div>
         </div>
-        <div class="user-debt-block">
+        <div class="user-debt-block index-block">
             <div class="user-debt-btn">我的转让</div>
             <div class="user-debt-btn"><span>4</span>我的承接</div>
-        </div>
-        <div class="user-bankcard-block">
-            <div class="user-bankcard-top">
-                <h3 class="user-bankcard-top-tit">我的银行卡</h3>
-                <div class="bindcard-btn">去绑定</div>
-            </div>
-            <div class="user-bankcard-line">
-                <span class="bank-logo"></span>
-                <span class="bank-name">中国农业银行</span>
-                <span class="bankcard-number">622200****0004271</span>
-            </div>
         </div>
         <div class="login-out">退出登录</div>3
     </div>

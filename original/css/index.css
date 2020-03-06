@@ -1,0 +1,73 @@
+.index-top-block {
+    position: relative;
+    height: 0.92rem;
+    padding: 0 0.3rem;
+    line-height: 0.92rem;
+    background: rgba(0, 164, 255, 0.04);
+}
+
+.index-top-main {
+    font-size: 0.26rem;
+    color: #333;
+}
+
+.index-top-main>span {
+    font-size: 0.26rem;
+    color: #ff3232;
+}
+
+.index-top-btn {
+    position: absolute;
+    right: 0.3rem;
+    top: 0.2rem;
+    width: 1.4rem;
+    height: 0.52rem;
+    font-size: 0.24rem;
+    color: #00a4ff;
+    line-height: 0.52rem;
+    text-align: center;
+    border: 1px solid #00a4ff;
+    border-radius: 0.5rem;
+}
+
+.user-info-block {
+    padding: 0.3rem;
+    background: #fff;
+}
+
+.user-avatar {
+    width: 0.96rem;
+    height: 0.96rem;
+    overflow: hidden;
+}
+
+.user-info {
+    margin-left: 0.3rem;
+}
+
+.user-mobile {
+    font-size: 0.32rem;
+    color: #323232;
+    line-height: 0.44rem;;
+}
+
+.user-real-name {
+    margin-top: 0.1rem;
+    padding: 0.08rem 0.18rem;
+    font-size: 0.24rem;
+    color: #00a4ff;
+    border-radius: 0.5rem;
+    border: 1px solid #00a4ff;
+}
+
+.index-block {
+    margin-top: 0.2rem;
+    padding: 0 0.3rem;
+    background: #fff;
+}
+
+.index-block-tit {
+    font-size: 0.3rem;
+    color: #323232;
+    font-weight: bolder;;
+}
