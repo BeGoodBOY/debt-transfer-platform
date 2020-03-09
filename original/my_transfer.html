@@ -8,31 +8,41 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./js/rem.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/my_transfer.css">
 </head>
-<body>
-    <div id="app">
+<body class="bgf4">
+    <div id="app" class="app">
+        <header class="header">
+            <h2 class="header-tit">
+                <span class="header-tit-text">我的转让</span>
+                <div class="location-back">
+                    <span class="location-back-icon"></span>
+                </div>
+            </h2>
+        </header>
+        <div style="width: 100%; height: 0.1rem; background: #eee;"></div>
         <div class="main">
-            <div class="tab-udtk">
+            <div class="tab-udtk hrzbtw-box">
                 <div class="tab-item-udtk">
-                    <div>转让中</div>
-                    <div><em>1</em>项</div>
+                    <div class="tab-item-key">转让中</div>
+                    <div class="tab-item-val"><em>1</em>项</div>
                 </div>
                 <div class="tab-item-udtk">
-                    <div>已完成</div>
-                    <div><em>1</em>项</div>
+                    <div class="tab-item-key">已完成</div>
+                    <div class="tab-item-val"><em>1</em>项</div>
                 </div>
                 <div class="tab-item-udtk">
-                    <div>已撤销</div>
-                    <div><em>1</em>项</div>
+                    <div class="tab-item-key">已撤销</div>
+                    <div class="tab-item-val"><em>1</em>项</div>
                 </div>
                 <div class="tab-item-udtk">
-                    <div>已作废</div>
-                    <div><em>1</em>项</div>
+                    <div class="tab-item-key">已作废</div>
+                    <div class="tab-item-val"><em>1</em>项</div>
                 </div>
-                <div class="tab-item-udtk">
-                    <div>全部</div>
-                    <div><em>1</em>项</div>
+                <div class="tab-item-udtk tab-item-udtkActive">
+                    <div class="tab-item-key">全部</div>
+                    <div class="tab-item-val"><em>1</em>项</div>
                 </div>
             </div>
             <div class="tab-cont">
@@ -40,7 +50,7 @@
                     <div class="transfer-item">
                         <div class="transfer-top">
                             <span class="transfer-status">转让中</span>
-                             <div class="transfer-line">
+                             <div class="transfer-tit">
                                  <span>承接人：</span>
                                  <span>某某某</span>
                              </div>

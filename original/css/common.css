@@ -79,6 +79,28 @@
     display: flex;
 }
 
+.hrzbtw-box {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.center-box {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
 .bgf4 {
     background: #f4f4f4;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+.clearfix::after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
 }

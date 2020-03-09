@@ -1,0 +1,135 @@
+.tab-udtk {
+    padding: 0.4rem 0.32rem;
+    background: #fff;
+}
+
+.tab-item-udtk {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 2.18rem;
+    padding: 0.2rem 0 0.2rem 0.3rem;
+    background: #f1f1f1;
+    border-radius: 0.06rem;
+}
+
+.tab-item-udtkActive {
+    background-image: linear-gradient(180deg, #00a4ff 4%, #20c6f7 100%);
+}
+
+.tab-item-key {
+    font-size: 0.28rem;
+    color: #323232;
+    line-height: 0.4rem;
+}
+
+.tab-item-udtkActive .tab-item-key, .tab-item-udtkActive .tab-item-val {
+    color: #fff;
+}
+
+.tab-item-val {
+    font-size: 0.24rem;
+    color: #666;
+    line-height: 0.41rem;
+}
+
+.tab-item-val>em {
+    font-size: 0.28rem;
+    line-height: 0.41rem;
+    vertical-align: top;
+}
+
+.my-udtk-item {
+    margin-top: 0.2rem;
+    padding: 0.3rem 0.32rem;
+    background: #fff;
+}
+
+.udtk-item-top {
+    position: relative;
+}
+
+.udtk-item-tit {
+    font-size: 0.3rem;
+    color: #333;
+    font-weight: bolder;
+    line-height: 0.42rem;
+}
+
+.udtk-item-status {
+   position: absolute;
+   right: 0;
+   top: -0.04rem; 
+   padding: 0.12rem 0.3rem;
+   font-size: 0.24rem;
+   color: #ff5656;
+   line-height: 1em;
+   border: 1px solid #ff5656;
+   border-radius: 0.5rem;
+}
+
+.udtk-item-statusBacking {
+    color: #f8b21a;
+    border-color: #f8b21a;
+}
+
+.udtk-item-statusOver {
+    color: #4bd75d;
+    border-color: #4bd75d;
+}
+
+.udtk-item-main {
+    margin-top: 0.2rem;
+}
+
+.udtkItem-block {
+    width: 2.16rem;
+}
+
+.udtkItem-block>span {
+    display: block;
+    text-align: center;
+}
+
+.udtkItem-noBg>span:first-child {
+    font-size: 0.32rem;
+    color: #323232;
+    line-height: 0.44rem;
+}
+
+.udtkItem-noBg>span:last-child {
+    font-size: 0.24rem;
+    color: #999;
+    line-height: 0.34rem;
+}
+
+.udtkItem-main1 {
+    margin-bottom: 0.2rem;
+}
+
+.udtkItem-Bg {
+    padding: 0.16rem 0;
+    background: #f1f1f1;
+    border-radius: 0.06rem;
+}
+
+.udtkItem-Bg>span:first-child {
+    font-size: 0.24rem;
+    color: #666;
+    line-height: 0.34rem;
+}
+
+.udtkItem-Bg>span:last-child {
+    font-size: 0.22rem;
+    color: #999;
+    line-height: 0.32rem;
+}
+
+.udtk-item-btm {
+    margin-top: 0.3rem;
+}
+
+.btn-goUdtkDtl {
+    float: right;
+    font-size: 0.24rem;
+    color: #666;
+}

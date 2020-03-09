@@ -8,65 +8,174 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./js/rem.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/my_undertake.css">
 </head>
-<body>
-    <div id="app">
+<body class="bgf4">
+    <div id="app" class="app">
+        <header class="header">
+            <h2 class="header-tit">
+                <span class="header-tit-text">我的承接</span>
+                <div class="location-back">
+                    <span class="location-back-icon"></span>
+                </div>
+            </h2>
+        </header>
+        <div style="width: 100%; height: 0.1rem; background: #eee;"></div>
         <div class="main">
-            <div class="tab-udtk">
+            <div class="tab-udtk hrzbtw-box">
                 <div class="tab-item-udtk">
-                    <div>待确认</div>
-                    <div><em>1</em>项</div>
+                    <div class="tab-item-key">待确认</div>
+                    <div class="tab-item-val"><em>1</em>项</div>
                 </div>
                 <div class="tab-item-udtk">
-                    <div>回款中</div>
-                    <div><em>1</em>项</div>
+                    <div class="tab-item-key">回款中</div>
+                    <div class="tab-item-val"><em>1</em>项</div>
                 </div>
-                <div class="tab-item-udtk">
-                    <div>全部</div>
-                    <div><em>1</em>项</div>
+                <div class="tab-item-udtk tab-item-udtkActive">
+                    <div class="tab-item-key">全部</div>
+                    <div class="tab-item-val"><em>9</em>项</div>
                 </div>
             </div>
             <div class="tab-cont">
                 <div class="tab-cont-item">
+                    <!-- 待确认 -->
                     <div class="my-udtk-item">
                         <div class="udtk-item-top">
                             <h3 class="udtk-item-tit">达达优选-0232323</h3>
                             <span class="udtk-item-status">待确认</span>
                         </div>
                         <div class="udtk-item-main">
-                            <div class="udtkItem-main1">
-                                <div class="udtkItem-block">
+                            <div class="udtkItem-main1 hrzbtw-box">
+                                <div class="udtkItem-block udtkItem-noBg">
                                     <span class="udtkItem-val">¥ 10000</span>
                                     <span class="udtkItem-key">出让金额</span>
                                 </div>
-                                <div class="udtkItem-block">
+                                <div class="udtkItem-block udtkItem-noBg">
                                     <span class="udtkItem-val">¥ 0</span>
                                     <span class="udtkItem-key">折扣金额</span>
                                 </div>
-                                <div class="udtkItem-block">
+                                <div class="udtkItem-block udtkItem-noBg">
                                     <span class="udtkItem-val">0折</span>
                                     <span class="udtkItem-key">折扣</span>
                                 </div>
                             </div>
-                            <div class="udtkItem-main2">
-                                <div class="udtkItem-block">
+                            <div class="udtkItem-main2 hrzbtw-box">
+                                <div class="udtkItem-block udtkItem-Bg">
                                     <span class="udtkItem-val">一次性还本付息</span>
                                     <span class="udtkItem-key">还款方式</span>
                                 </div>
-                                <div class="udtkItem-block">
+                                <div class="udtkItem-block udtkItem-Bg">
                                     <span class="udtkItem-val">10期</span>
                                     <span class="udtkItem-key">剩余期限</span>
                                 </div>
-                                <div class="udtkItem-block">
+                                <div class="udtkItem-block udtkItem-Bg">
                                     <span class="udtkItem-val">5天</span>
                                     <span class="udtkItem-key">剩余有效期</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="udtk-item-btm">
+                        <div class="udtk-item-btm clearfix">
                             <span class="btn-goUdtkDtl">查看详情</span>
                         </div>
+                    </div>
+                    <!-- 回款中 -->
+                    <div class="my-udtk-item">
+                        <div class="udtk-item-top">
+                            <h3 class="udtk-item-tit">达达优选-0232323</h3>
+                            <span class="udtk-item-status udtk-item-statusBacking">回款中</span>
+                        </div>
+                        <div class="udtk-item-main">
+                            <div class="udtkItem-main1 hrzbtw-box">
+                                <div class="udtkItem-block udtkItem-noBg">
+                                    <span class="udtkItem-val">¥ 10000</span>
+                                    <span class="udtkItem-key">承接金额</span>
+                                </div>
+                                <div class="udtkItem-block udtkItem-noBg">
+                                    <span class="udtkItem-val">10期</span>
+                                    <span class="udtkItem-key">认购期限</span>
+                                </div>
+                                <div class="udtkItem-block udtkItem-noBg">
+                                    <span class="udtkItem-val">¥ 1000</span>
+                                    <span class="udtkItem-key">已回款金额</span>
+                                </div>
+                            </div>
+                            <div class="udtkItem-main2 hrzbtw-box">
+                                <div class="udtkItem-block udtkItem-noBg">
+                                    <span class="udtkItem-val">¥ 500</span>
+                                    <span class="udtkItem-key">最近一期回款金额</span>
+                                </div>
+                                <!-- <div class="udtkItem-block udtkItem-noBg">
+                                    <span class="udtkItem-val">10期</span>
+                                    <span class="udtkItem-key">剩余期限</span>
+                                </div> -->
+                                <div class="udtkItem-block udtkItem-noBg">
+                                    <span class="udtkItem-val">2020-02-01</span>
+                                    <span class="udtkItem-key">日期</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="udtk-item-btm clearfix">
+                            <span class="btn-goUdtkDtl">查看详情</span>
+                        </div>
+                    </div>
+                    <!-- 已完成 -->
+                    <div class="my-udtk-item">
+                        <div class="udtk-item-top">
+                            <h3 class="udtk-item-tit">达达优选-0232323</h3>
+                            <span class="udtk-item-status udtk-item-statusOver">已完成</span>
+                        </div>
+                        <div class="udtk-item-main">
+                            <div class="udtkItem-main1 hrzbtw-box">
+                                <div class="udtkItem-block udtkItem-noBg">
+                                    <span class="udtkItem-val">¥ 10000</span>
+                                    <span class="udtkItem-key">认购金额</span>
+                                </div>
+                                <div class="udtkItem-block udtkItem-noBg">
+                                    <span class="udtkItem-val">10期</span>
+                                    <span class="udtkItem-key">认购期限</span>
+                                </div>
+                                <div class="udtkItem-block udtkItem-noBg">
+                                    <span class="udtkItem-val">¥ 1000</span>
+                                    <span class="udtkItem-key">已回款金额</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-udtk-item">
+                        <div class="udtk-item-top">
+                            <h3 class="udtk-item-tit">达达优选-0232323</h3>
+                            <span class="udtk-item-status">已取消</span>
+                        </div>
+                        <div class="udtk-item-main">
+                            <div class="udtkItem-main1 hrzbtw-box">
+                                <div class="udtkItem-block udtkItem-noBg">
+                                    <span class="udtkItem-val">¥ 10000</span>
+                                    <span class="udtkItem-key">出让金额</span>
+                                </div>
+                                <div class="udtkItem-block udtkItem-noBg">
+                                    <span class="udtkItem-val">¥ 0</span>
+                                    <span class="udtkItem-key">折扣金额</span>
+                                </div>
+                                <div class="udtkItem-block udtkItem-noBg">
+                                    <span class="udtkItem-val">0折</span>
+                                    <span class="udtkItem-key">折扣</span>
+                                </div>
+                            </div>
+                            <div class="udtkItem-main2 hrzbtw-box">
+                                <div class="udtkItem-block udtkItem-Bg">
+                                    <span class="udtkItem-val">一次性还本付息</span>
+                                    <span class="udtkItem-key">还款方式</span>
+                                </div>
+                                <div class="udtkItem-block udtkItem-Bg">
+                                    <span class="udtkItem-val">10期</span>
+                                    <span class="udtkItem-key">剩余期限</span>
+                                </div>
+                                <div class="udtkItem-block udtkItem-Bg">
+                                    <span class="udtkItem-val">5天</span>
+                                    <span class="udtkItem-key">剩余有效期</span>
+                                </div>
+                            </div>【
                     </div>
                 </div>
             </div>

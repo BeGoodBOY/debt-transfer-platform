@@ -1,0 +1,70 @@
+.tab-udtk {
+    padding: 0.4rem 0.32rem;
+    background: #fff;
+}
+
+.tab-item-udtk {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 1.2rem;
+    padding: 0.2rem 0 0.2rem 0.2rem;
+    background: #f1f1f1;
+    border-radius: 0.06rem;
+}
+
+.tab-item-udtkActive {
+    background-image: linear-gradient(180deg, #00a4ff 4%, #20c6f7 100%);
+}
+
+.tab-item-key {
+    font-size: 0.28rem;
+    color: #323232;
+    line-height: 0.4rem;
+}
+
+.tab-item-udtkActive .tab-item-key, .tab-item-udtkActive .tab-item-val {
+    color: #fff;
+}
+
+.tab-item-val {
+    font-size: 0.24rem;
+    color: #666;
+    line-height: 0.41rem;
+}
+
+.tab-item-val>em {
+    font-size: 0.28rem;
+    line-height: 0.41rem;
+    vertical-align: top;
+}
+
+.tab-cont {
+    margin-top: 0.2rem;
+}
+
+.transfer-item {
+    padding: 0.3rem 0.32rem;
+    background: #fff;
+}
+
+.transfer-top {
+    position: relative;
+}
+
+.transfer-status {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.3rem;
+    height: 0.46rem;
+    font-size: 0.24rem;
+    color: #f8b21a;
+    text-align: center;
+    line-height: 0.46rem;
+    border: 1px solid #f8b21a;
+    border-radius: 0.26rem;
+}
+
+.transfer-tit {
+    font-size: 
+}

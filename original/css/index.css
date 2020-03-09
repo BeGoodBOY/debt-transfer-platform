@@ -62,12 +62,109 @@
 
 .index-block {
     margin-top: 0.2rem;
-    padding: 0 0.3rem;
+    padding: 0 0.3rem 0.3rem;
     background: #fff;
 }
 
+.user-bankcard-top {
+    position: relative;
+}
+
 .index-block-tit {
+    padding: 0.3rem 0 0.2rem;
     font-size: 0.3rem;
     color: #323232;
-    font-weight: bolder;;
+    font-weight: bolder;
+    line-height: 0.42rem;
+}
+
+.bindcard-btn {
+    position: absolute;
+    right: 0.26rem;
+    top: 0.3rem;
+    font-size: 0.24rem;
+    color: #666;
+    line-height: 0.42rem;
+}
+
+.bank-logo {
+    width: 0.72rem;
+    height: 0.72rem;
+    margin-right: 0.26rem;
+    background: #eee;
+}
+
+.bank-name {
+    font-size: 0.3rem;
+    color: #323232;
+    line-height: 0.42rem;
+}
+
+.bankcard-number {
+    font-size: 0.26rem;
+    color: #666;
+    line-height: 0.36rem;
+}
+
+.bankcard-number span {
+    margin-right: 0.3rem;
+}
+
+.total-assets-key {
+    font-size: 0.24rem;
+    color: #666;
+    line-height: 0.34rem;
+}
+
+.total-assets-val {
+    font-size: 0.52rem;
+    color: #323232;
+    line-height: 0.74rem;
+}
+
+.user-assets-box {
+    margin-top: 0.12rem;
+    padding: 0.36rem 0.18rem; 
+    background: rgba(0, 164, 255, 0.03);
+    border-top: 1px solid rgba(0, 164, 255, 0.2);
+}
+
+.user-assets-line {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    margin-bottom: 0.26rem;
+    line-height: 0.36rem;
+}
+
+.user-assets-line:last-child {
+    margin-bottom: 0;
+}
+
+.user-assets-line-key {
+    font-size: 0.26rem;
+    color: #666;
+}
+
+.user-assets-line-val {
+    font-size: 0.3rem;
+    color: #323232;
+}
+
+.user-debt-btn {
+    width: 50%;
+    font-size: 0.28rem;
+    color: #323232;
+}
+
+.login-out {
+    width: 6.02rem;
+    height: 0.88rem;
+    margin: 0.8rem auto 0.5rem;
+    font-size: 0.32rem;
+    color: #00a4ff;
+    line-height: 0.88rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 164, 255, 0.23);
 }
